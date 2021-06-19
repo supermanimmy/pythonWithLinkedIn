@@ -26,5 +26,9 @@ def main():
     today = datetime.now()
     print("The current date and time is", today)
 
+    # Get the current time
+    current_time = datetime.time(datetime.now())
+    print("The current time is: ", current_time)
+
 if __name__ == '__main__':
     main()
