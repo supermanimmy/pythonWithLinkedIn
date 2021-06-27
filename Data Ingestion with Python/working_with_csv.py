@@ -4,6 +4,7 @@ import csv
 from collections import namedtuple
 from datetime import datetime
 
+
 Column = namedtuple('Column', 'src dest convert')
 
 def parse_timestamp(text):
