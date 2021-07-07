@@ -23,8 +23,10 @@ def print_animal(o):
 def main():
     a0 = Animal('Kitten', 'Meow', 'Meowww')
     a1 = Animal('duck', 'Donald', 'QUACK')
+    print_animal(Animal('dog', 'Maxie', "Woof"))
 
     print_animal(a0)
+    print_animal(a1)
 
 if __name__ == '__main__':
     main()
