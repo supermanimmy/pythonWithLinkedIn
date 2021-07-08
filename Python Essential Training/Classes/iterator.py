@@ -31,8 +31,12 @@ class inclusive_range:
     
     
 def main():
-    for n in inclusive_range(2):
-        print(n, end= ' ')
-    print()
+    try:
+        for n in inclusive_range(1,2,3,4):
+            print(n, end= ' ')
+        print()
+    except TypeError as e:
+        print(f'range error: {e}')
+
 
 if __name__ == '__main__': main()
