@@ -19,6 +19,9 @@ class Animal:
         try: return self._sound
         except AttributeError: return None
 
+    def __str__(self):
+        return f'The {self.type()} is named "{self.name()}" and says "{self.sound()}".'
+
 class Duck(Animal):
     def __init__(self, **kwargs):
         self._type = 'duck'
@@ -33,17 +36,13 @@ class Kitten(Animal):
 
     def kill(self, s):
         print(f'{self.name()} will now kill all {s}!')
-
-def print_animal(o):
-    if not isinstance(o, Animal):
-        raise TypeError('print_animal(): requires an Animal')
-    print(f'The {o.type()} is named "{o.name()}" and says "{o.sound()}".')
+    
 
 def main():
     a0 = Kitten(name = 'fluffy', sound = 'rwar')
     a1 = Duck(name = 'donald', sound = 'quack')
-    print_animal(a0)
-    print_animal(a1)
+    print(a0)
+    print(a1)
     a0.kill('humans')
 
 if __name__ == '__main__': main()
