@@ -44,6 +44,7 @@ def main():
     
     print('drop')
     cur.execute("DROP TABLE test")
+    db.commit()
     print('close')
     db.close()
 
