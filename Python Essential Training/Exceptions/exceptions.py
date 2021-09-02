@@ -1,6 +1,5 @@
 import sys
 
-
 def main():
     try:
         x = 5/0
