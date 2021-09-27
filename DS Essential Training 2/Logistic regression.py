@@ -153,7 +153,7 @@ titanic_data.reset_index(inplace=True, drop=True)
 print(titanic_data.info())
 
 
-# ## Converting categorical variables to a dummy indicators
+# ## Converting categorical variables to a placeholder indicators
 
 # In[28]:
 
